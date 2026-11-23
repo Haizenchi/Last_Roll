@@ -1,0 +1,79 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "c298734afdf31459b214bab78ebb14a3",
+    "packages": [
+        {
+            "name": "lemmon/validator",
+            "version": "v0.19.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lemmon/validator-php.git",
+                "reference": "06c61f4807fca3ccf3984da0fac85afdcba547e1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lemmon/validator-php/zipball/06c61f4807fca3ccf3984da0fac85afdcba547e1",
+                "reference": "06c61f4807fca3ccf3984da0fac85afdcba547e1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": "^8.3"
+            },
+            "require-dev": {
+                "carthage-software/mago": "^1",
+                "ergebnis/composer-normalize": "^2.48",
+                "pestphp/pest": "^4.3",
+                "phpstan/phpstan": "^2.1",
+                "symfony/error-handler": "^7.0",
+                "symfony/var-dumper": "^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lemmon\\": "src/Lemmon/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jakub Pelák",
+                    "email": "jpelak@gmail.com"
+                }
+            ],
+            "description": "A lightweight, fluent validation library for PHP.",
+            "homepage": "https://github.com/lemmon/validator-php",
+            "keywords": [
+                "schema",
+                "valibot",
+                "validation",
+                "validator",
+                "zod"
+            ],
+            "support": {
+                "issues": "https://github.com/lemmon/validator-php/issues",
+                "source": "https://github.com/lemmon/validator-php/tree/v0.19.0"
+            },
+            "time": "2026-11-15T19:40:17+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {},
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.1",
+        "ext-pdo_mysql": "*"
+    },
+    "platform-dev": {},
+    "plugin-api-version": "2.9.0"
+}

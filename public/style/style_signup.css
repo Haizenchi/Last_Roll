@@ -1,0 +1,196 @@
+:root {
+    --background_color :#07162C;
+    --secondary_color :#FFF6EA;
+    --accent_color:#B02A3C;
+    --main_font: "Atkinson Hyperlegible", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background_color);
+    background-image: url(../img/body_background.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+body *{
+    font-family: var(--main_font);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--accent_color);
+    justify-content: space-between;
+    padding-inline: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    align-self: flex-end;
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--accent_color);
+}
+
+footer a {
+    font-size: 12px;
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+}
+
+.signup {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup form {
+    width: 500px;
+    margin: 0;
+    padding: 0;
+}
+
+.signup fieldset {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secondary_color);
+    margin: 0;
+    padding: 20px;
+    border: 1px solid var(--secondary_color);
+}
+
+.signup p {
+    padding-bottom: 15px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.signup label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 80%;
+    margin-inline: auto;
+}
+
+.signup input {
+    display: block;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-inline: auto;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 15px;
+    justify-content: center;
+    align-self: center;
+    color: white;
+
+}
+
+footer nav {
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+    justify-content: center;
+    align-self: center;
+}
+
+fieldset button {
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    margin-top: 10px;
+    padding-block: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--accent_color);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+#menuButton {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    header {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #menuButton {
+        display: block;
+
+        background: none;
+        border: none;
+
+        color: white;
+        font-size: 32px;
+
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+
+        width: 100%;
+
+        flex-direction: column;
+        align-items: center;
+
+        gap: 15px;
+
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    header nav.open {
+        display: flex;
+    }
+
+
+    /* Formulaire responsive */
+
+    .signup {
+        padding: 20px;
+    }
+
+    .signup form {
+        width: 100%;
+    }
+
+}
