@@ -12,7 +12,7 @@ signupForm.addEventListener("submit", function(event) {
     const confirmPassword = document.querySelector("#ConfirmPassword").value;
 
     if (password !== confirmPassword) {
-       event.preventDefault();
-       alert("Les mots de passe ne correspondent pas.");
+        event.preventDefault();
+        alert("Les mots de passe ne correspondent pas.");
     }
 });
