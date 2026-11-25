@@ -30,7 +30,7 @@
 
     <section class="login">
 
-        <form id="loginForm" action="#" method="post">
+        <form id="loginForm" action="index.php?page=authenticate" method="post">
 
             <fieldset>
 

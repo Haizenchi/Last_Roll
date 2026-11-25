@@ -2,6 +2,7 @@
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 use App\Controller\RegistrationController;
+use App\Controller\LoginController;
 
 $page = $_GET['page'] ?? 'signup';
 
@@ -17,6 +18,11 @@ switch ($page) {
     case 'register':
         $controller = new RegistrationController();
         $controller->register();
+        break;
+
+    case 'authenticate':
+        $controller = new LoginController();
+        $controller->authenticate();
         break;
 
     default:
