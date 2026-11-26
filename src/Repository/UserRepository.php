@@ -33,4 +33,14 @@ class UserRepository
         $request->bindValue(':password', $user->getPassword());
         $request->execute();
     }
+
+    public function findByNickname(string $nickname): array|false
+    {
+        $sql = 'SELECT id_user, nickname, email, password FROM `user` WHERE nickname = :nickname LIMIT 1';
+        $request = $this->connect->prepare($sql);
+        $request->bindValue(':nickname', $nickname);
+        $request->execute();
+
+        return $request->fetch(\PDO::FETCH_ASSOC);
+    }
 }

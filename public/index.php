@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 use App\Controller\RegistrationController;
@@ -13,6 +15,10 @@ switch ($page) {
 
     case 'login':
         require dirname(__DIR__) . '/template/template_login.php';
+        break;
+
+    case 'home':
+        require dirname(__DIR__) . '/template/template_home.php';
         break;
 
     case 'register':

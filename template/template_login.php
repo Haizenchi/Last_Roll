@@ -36,8 +36,26 @@
 
                 <p><strong>Connexion</strong></p>
 
+                <?php
+                    $status = $_GET['status'] ?? '';
+
+                    switch ($status) {
+                        case 'invalid':
+                            echo '<p>Veuillez remplir correctement les champs.</p>';
+                            break;
+
+                        case 'invalid_credentials':
+                            echo '<p>Identifiant ou mot de passe incorrect.</p>';
+                            break;
+
+                        case 'error':
+                            echo '<p>Une erreur technique est survenue.</p>';
+                            break;
+                    }
+                ?>
+
                 <label for="Identifiant">Identifiant</label>
-                <input type="text" id="Identifiant" name="nickname" placeholder="Choissisez votre identifiant" maxlength="20" minlength="4">
+                <input type="text" id="Identifiant" name="nickname" placeholder="Entrez votre identifiant" maxlength="20" minlength="4">
                 <label for="Password">Mot de Passe</label>
                 <input type="password" id="Password" name="password" placeholder="Entrez votre mot de passe" maxlength="24" minlength="6">
             
